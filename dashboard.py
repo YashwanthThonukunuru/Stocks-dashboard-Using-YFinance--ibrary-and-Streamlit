@@ -29,7 +29,6 @@ import streamlit as st
 
 # Configuration of page
 st.set_page_config(page_title='Financial Dashboard',
-                   page_icon=stock_image,
                    layout="centered", 
                    initial_sidebar_state="auto")
 
