@@ -5,6 +5,6 @@ datetime
 yfinance
 streamlit
 plotly.graph_objects 
-import plotly.express 
+plotly.express 
 plotly.subplots 
 numpy
