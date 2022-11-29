@@ -643,9 +643,6 @@ def run():
     elif News == 'News':
         News()
        
-        
-if __name__ == "__main__":
-    run()   
 
 
 
