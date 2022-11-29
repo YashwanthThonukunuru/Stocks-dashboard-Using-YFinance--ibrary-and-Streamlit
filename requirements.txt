@@ -4,6 +4,7 @@ matplotlib
 datetime
 yfinance
 streamlit
-plotly
+plotly.graph_objects 
+import plotly.express 
+plotly.subplots 
 numpy
-PIL
