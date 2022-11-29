@@ -80,7 +80,7 @@ with Summary:
             global var
             for ticker in tickers:
                 stock_name = yf.Ticker(ticker)
-                tab1_dict = {
+                tab1_dic = {
                               "Previous Close": stock_name.info['previousClose'],
                               "Open":           stock_name.info['open'],
                               "Bid":            stock_name.info['bid'],
@@ -90,7 +90,7 @@ with Summary:
                               "Day Low":        stock_name.info['dayLow'],
                               "Day High":       stock_name.info['dayHigh']
                             }
-                return tab1_dict
+                return tab1_dic
                 
         # Conditions to show financial dcouemnts in web app
         if tickers != '-':
@@ -98,7 +98,7 @@ with Summary:
             table1_df = pd.DataFrame.from_dict(table1,orient='index',columns=['Values'])
             st.table(table1_df) 
             
-            
+     
     with col2:
         
         @st.cache(suppress_st_warning=True)
@@ -106,7 +106,7 @@ with Summary:
             global var
             for ticker in tickers:
                 stock_name = yf.Ticker(ticker)
-                tab2_dict = {
+                tab2_dic = {
                               "Market Cap":         stock_name.info['marketCap'],
                               "Beta (5Y Monthly)":  stock_name.info['beta'],
                               "PE Ratio (TTM)":     stock_name.info['trailingPE'],
@@ -116,7 +116,7 @@ with Summary:
                               "52 Week Low":        stock_name.info['fiftyTwoWeekLow'],
                               "52 Week High":       stock_name.info['fiftyTwoWeekHigh']
                             }
-                return tab2_dict
+                return tab2_dic
                 
         # Conditions to show financial dcouemnts in web app
         if tickers != '-':
