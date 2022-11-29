@@ -28,7 +28,6 @@ import streamlit as st
 #==============================================================================
 
 # Configuration of page
-stock_image = Image.open("stock_emoji.png")
 st.set_page_config(page_title='Financial Dashboard',
                    page_icon=stock_image,
                    layout="centered", 
